@@ -1,0 +1,57 @@
+﻿@using Forms.ViewModels;
+
+@page "/working";
+<h3>Working</h3>
+
+
+
+<section class="working-container">
+
+	<header>
+		<ul>
+			<li><a href="/">Back to Index Page</a></li>
+			<li><a href="/notworking">To not working example</a></li>
+		</ul>
+		
+		
+	</header>
+
+	<div>
+		<p>
+			The below EditForm has its css applied to it and is using the ::deep pseudo-element.
+		</p>
+		<p>
+			The css code can be found at 
+		</p>
+
+		<pre>
+			/pages/Working.razor.css
+		</pre>
+
+		<p>
+			The razor file can be found at
+		</p>
+		<pre>
+			/pages/Working.razor
+		</pre>
+	</div>
+
+	<EditForm Model="@_IndexVM" OnValidSubmit="Form_Submitted">
+		<InputText placeholder="First name" @bind-Value="_IndexVM.FirstName" />
+		<button type="submit">submit</button>
+	</EditForm>
+
+</section>
+
+	
+
+@code 
+{
+	public IndexVM _IndexVM = new IndexVM();
+
+
+	public void Form_Submitted()
+	{
+		
+	}
+}

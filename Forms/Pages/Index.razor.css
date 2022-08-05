@@ -1,0 +1,29 @@
+﻿.index-page-container > section
+{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-gap:40px;
+
+    margin-left:auto;
+    margin-right:auto;
+    max-width:800px;
+}
+
+.example-container
+{
+    border 1px solid lightgrey;
+    border-radius:5px;
+}
+
+.example-container > header {
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    text-align:center;
+    padding:10px;
+}
+
+.example-container > div
+{
+
+}

@@ -1,0 +1,53 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Styling an Edit Form in CSS</h1>
+
+
+
+<section class="index-page-container">
+
+
+	<div>
+		<p>
+		Trying to apply css to Blazor EditForm. Only seems to work when ::deep is applied to the to css.
+		</p>
+
+		<p>
+		Below are links to 2 examples. One uses the ::deep pseudo-element and styles are applied. The other does not use the ::deep pseudo-element and styles are not applied.
+		</p>
+
+		<p>
+		My guess is EditForm is some kind of child component so it requires the ::deep ??
+		</p>
+	</div>
+	
+	<section>
+
+		<div class="example-container">
+			<header>
+				Using ::deep pseudo-element
+			</header>
+			<div>This works and css is applied</div>
+			<a href="/working">View example</a>
+		</div>
+
+		<div class="example-container">
+			<header>
+				Not using ::deep pseudo-element
+			</header>
+			<div>This does not work, no css is applied</div>
+			<a href="/notworking">View example</a>
+		</div>
+
+	</section>
+
+
+
+</section>
+
+@code
+{
+
+}
