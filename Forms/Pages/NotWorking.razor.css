@@ -10,6 +10,6 @@
         border-radius: 10px;
     }
 
-.index-page-container form button {
-    background-color: red;
-}
+    .notworking-container form button {
+        background-color: red;
+    }
